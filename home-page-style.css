@@ -1,0 +1,17 @@
+.container {
+    width: 1000px;
+    margin:auto;
+}
+header {
+    height: 60px;
+    background-color: #3f3f3f;
+    color: white;
+}
+
+/* div.input {
+    float: right;
+} */
+/* div h2{
+    size: 100px;
+    height: 100px;
+} */

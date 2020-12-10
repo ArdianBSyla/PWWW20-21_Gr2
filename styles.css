@@ -2,3 +2,12 @@
     font-size: 2.5em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.a:hover {
+    color: aliceblue;
+    background-color: beige;
+}
+
+a{
+    color: rgb(201, 159, 97) !important;
+}

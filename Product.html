@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Krijimi i nje dyqani online</title>
+
+    </head>
+
+    <body>
+        <form method="get" action="#">
+            <fieldset>
+                <legend> Kerko produktin e deshiruar </legend>
+
+                <div id="serchBox">
+                    <input type="search" name="serch" placeholder="Kerko produktin>
+                    Tema:
+                    <input type="radio" name="subject" value="1">Laptop
+                    <input type="radio" name="subject" value="2">Maus
+                    <input type="radio" name="subject" value="3">Kamere
+                    <select name="filter">
+                        <option value="0">Zgjedh Kategorine</option>
+                        <option value="1">Kompjuter</option>
+                        <option value="2">Laptop</option>
+                        <option value="1">Maus</option>
+                        <option value="1">Kamere</option>
+                    </select>
+                </div>
+                <br/>
+                <div id="setiingsBox">
+                    <select name="actions">
+                    <option value="0">Shto</option>
+                    <option value="1">Largo</option>
+                    <option value="0">Paguaj</option>
+                    <option value="0">Fshij</option>
+                    <option value="0">Ruaj</option>
+                    </select>
+                    <input type="submit" value="Apliko ndryshimin"/>
+                </div>
+                <div id="artistBox">
+                    <table>
+                        <caption>Pikturat</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="2"></th>
+                                <th scope="col">Emri</th>
+                                <th scope="col">Kartela Grafike</th>
+                                <th scope="col">RAM</th>
+                                <th scope="col">Memoria</th>
+                                <th scope="col">Procesori</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" name="index[]" value="1"></td>
+                                <td><img src="images/05030.jpg" alt="foto"/></td>
+                                <td><em>Laptop Dell</em></td>
+                                <td>Dell G5 15 Gaming</td>
+                                <td>1793</td>
+                                <td>Romanticizem</td>
+                                <td><a href="#"><img src="images/archive.png"/></a></td>
+                                <td><a href="#"><img src="images/collection.png"/></a></td>
+                                <td><a href="#"><img src="images/edit.png"/></a></td>
+                                <td><a href="#"><img src="images/delete.png"/></a></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="index[]" value="1"></td>
+                                <td><img src="images/120010.jpg" alt="foto"/></td>
+                                <td><em>Portrait of Eleonor of Toledo</em></td>
+                                <td>Bronzino, Agnolo</td>
+                                <td>1545</td>
+                                <td>Mannerism</td>
+                                <td><a href="#"><img src="images/archive.png"/></a></td>
+                                <td><a href="#"><img src="images/collection.png"/></a></td>
+                                <td><a href="#"><img src="images/edit.png"/></a></td>
+                                <td><a href="#"><img src="images/delete.png"/></a></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </body>
+</html>

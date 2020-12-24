@@ -22,3 +22,11 @@ a{
     size: 100px;
     height: 100px;
 } */
+p {
+    word-break: break-all;
+}
+
+.footerDiv {
+    color: aliceblue !important;
+    background-color: #3f3f3f;
+}

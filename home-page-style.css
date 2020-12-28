@@ -8,25 +8,67 @@ header {
     color: white;
 }
 a:hover {
-    /* color: aliceblue; */
-    background-color: beige;
+    background-color:#ff9900;
+    color: #3f3f3f;
 }
 
 a{
-    color: rgb(201, 159, 97);
+    /* color: rgb(201, 159, 97); */
+    color: #ff9900;
+    text-decoration: none;
 }
-/* div.input {
-    float: right;
-} */
-/* div h2{
-    size: 100px;
-    height: 100px;
-} */
+
 p {
-    word-break: break-all;
+    word-break: break-word;
+    font-size: 13px;
+    color: #868686;
+    font-family: sans-serif;
 }
 
 .footerDiv {
     color: aliceblue !important;
+    background-color: #252525;
+}
+
+.footerButton {
     background-color: #3f3f3f;
+    border: none;
+    color: #868686;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.search-btn{
+    background-color: #ff9900;
+    height: 30px;
+    border: none;
+    color: white;
+}
+
+.search-btn:hover{
+    background-color: white;
+    color: #ff9900;
+    cursor: pointer;
+}
+
+.headParagraph {
+    margin-top: 25px; 
+    margin-bottom: 25px;
+    color: #666666;
+}
+
+.footerSubmitButton{
+    background-color: #3f3f3f;
+    border: none;
+    height: 30px;
+    margin-top: 15px;
+    color: #fe9900;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.footerSubmitButton:hover{
+    background-color:#ff9900;
+    color: #3f3f3f;
+    cursor: pointer;
 }

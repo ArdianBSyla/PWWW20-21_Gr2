@@ -2,6 +2,8 @@
     width: 1000px;
     margin:auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 header {
     height: 60px;
@@ -24,9 +26,7 @@ a{
 
 p {
     word-break: break-word;
-    font-size: 13px;
     color: #868686;
-    /* font-family: sans-serif; */
 }
 
 .footerDiv {
@@ -76,3 +76,12 @@ p {
     color: #3f3f3f;
     cursor: pointer;
 }
+.stylesBtn {
+    padding: 3px 10px 3px 10px;
+    border-style: solid;
+    border-radius: 5px;
+}
+body  {
+    background-image: url("../PWWW20-21_Gr2/fotoHomePage/blur3.jpg");
+    background-size: cover;
+  }

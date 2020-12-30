@@ -4,10 +4,12 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="reset.css" type="text/css">
         <link rel="stylesheet" href="home-page-style.css" type="text/css">
+        
         <title>
             Majestical
         </title>
     </head>
+    <script src="script/home-page.js"></script>
     <body>
         <div class="container">
             <header style="display: flex; align-items: center;">
@@ -15,12 +17,39 @@
                     <p style="font-size: 15px;"><a href="#" class="footerSubmitButton stylesBtn"> HOMEPAGE</a>  |  
                         <a href="#" class="footerSubmitButton stylesBtn">STYLE DEMO</a>  |  
                         <a href="#" class="footerSubmitButton stylesBtn">FULL WIDTH</a>  |  
-                        <a href="#" class="footerSubmitButton stylesBtn">PORTFOLIO</a>  |  
+                        <!-- <a href="#" class="footerSubmitButton stylesBtn">PORTFOLIO</a>  |   -->
                         <a href="#" class="footerSubmitButton stylesBtn">GALLERY</a>  |  
                         <a href="#" class="footerSubmitButton stylesBtn">DROPDOWN</a>
                     </p>
+
+                    
                     
                 </div>
+                <div class="icons">
+                    <a
+                     href="https://www.linkedin.com/"
+                     target="”_blank”"
+                     class="icon icon--linkedin"
+                   ></a>
+                   <a
+                     href="https://www.twitter.com/"
+                     target="”_blank”"
+                     class="icon icon--twitter"
+                   ></a>
+                   <a
+                     href="https://www.pinterest.com/"
+                     target="”_blank”"
+                     class="icon icon--pinterest"
+                   ></a>
+                   <a
+                     href="mailto:ardianbsyla@gmail.com?subject = Feedback&body = Message"
+                     target="”_blank”"
+                     class="icon icon--google-plus"
+                   ></a>
+                   <a href="https://rss.app/" target="”_blank”" class="icon icon--rss"></a>   
+                 </div>
+
+                
             </header>
             <section class="start-section" id="">
                 <div style="background-color: #252525;">
@@ -31,13 +60,22 @@
                         <input type="button" value="Search" class="search-btn" name="submit-search-btn">
                     </div>
                     <div style="width: 960px; height: 340px; background-color: #3f3f3f; margin-left: 20px;">
-                        <img src="fotoHomePage/desktop-setup-art.jpg" alt="desktop setup" width="960" height="340">
-                    </div>
-                </div>
-                <div style="background-color: #fe9900; height: 15px;">
-                    <div style="background-color: #ffff; width: 160px; height: 15px; margin-left: 180px;">
+                        <div class="mySlide fade">
+                            <img src="images/desktop-setup-art.jpg" alt="desktop setup" width="960" height="340">
+                        </div>
+                        <div class="mySlide fade">
+                            <img src="images/Ardi.jpg" alt="desktop setup" width="960" height="340">
+                        </div>
+                        
 
                     </div>
+                </div>
+                <div style="background-color: #fe9900; height: 15px; display: flex;">
+                    <div class="rectangle" onclick="currentSlide(1)" ></div>
+                    <div class="rectangle" onclick="currentSlide(2)"></div>
+                    <!-- <div style="background-color: #fe9900; width: 200px; height: 15px;"></div>
+                    <div style="background-color: #fe9900; width: 200px; height: 15px;"></div>
+                    <div style="background-color: #fe9900; width: 200px; height: 15px;"></div> -->
                 </div>
                 <section style="background-color: #e1e1e1; ">
                     <section style="margin-left: 20px; margin-right: 20px; background-color: #ffffff;">
@@ -56,11 +94,11 @@
                         <div style="width: 440px; float: left; word-break: break-all; margin-right: 10px;">
                             <div style="margin-bottom: 50px; height: fit-content; ">
                                 <p style="color: #666666; font-size: 25px; margin-bottom: 20px;" > Çfarë flasin të tjerët për ne</p>
-                                <p style="align-items: center; display: flex; color: black; font-size: 18px;"> <img src="fotoHomePage/thonjezat.jpg" alt="thonjezat" style="margin-right: 10px; margin-bottom: 5px;"> <b>Elon Musk</b> - CEO </p>
+                                <p style="align-items: center; display: flex; color: black; font-size: 18px;"> <img src="images/thonjezat.jpg" alt="thonjezat" style="margin-right: 10px; margin-bottom: 5px;"> <b>Elon Musk</b> - CEO </p>
                                 <p style="font-size: 15px;">Produket që i punojmë në kompanitë tona si SpaceX, Tesla përbëhen nga pjesët që ne i blejmë nga AlgoTech. Në këtë mënyrë ne jemi të sigurtë që fluturaket tona të shkojnë në destinacionin e duhur në hapësirë.</p>
                             </div>
                             <div style="margin-bottom: 10px;">
-                                <p style="align-items: center; display: flex; color: black; font-size: 18px;"> <img src="fotoHomePage/thonjezat.jpg" alt="thonjezat" style="margin-right: 10px; margin-bottom: 5px;"> <b>Bill Gates</b> - CEO </p>
+                                <p style="align-items: center; display: flex; color: black; font-size: 18px;"> <img src="images/thonjezat.jpg" alt="thonjezat" style="margin-right: 10px; margin-bottom: 5px;"> <b>Bill Gates</b> - CEO </p>
                                 <p style="font-size: 15px;">Të gjitha produktet në AlgoTech janë origjinale dhe me garancion nga prodhuesi. Ndërkohë, të gjitha porositë e bëra vijnë me transport falas në gjithë Kosovën, deri tek adresa juaj.</p>
                             </div>
                         </div>
@@ -68,7 +106,7 @@
                             <div style="margin-bottom: 50px; height: fit-content;">
                                 <p style="color: #666666; font-size: 25px; margin-bottom: 20px;" >Takoni ekipin tonë</p>
                                 <div style="display: flex;">
-                                    <p style="align-items: center; display: flex;"><a href="fotoHomePage/Ardi.jpg" class="imageClick"><img src="fotoHomePage/Ardi.jpg" width="110" height="110" alt="foto" style="margin-right: 5px;"></a>
+                                    <p style="align-items: center; display: flex;"><a href="images/Ardi.jpg" class="imageClick"><img src="images/Ardi.jpg" width="110" height="110" alt="foto" style="margin-right: 5px;"></a>
                                         <div style="display: block;">
                                             <p style="font-weight: bold;  color: black; font-size: 18px; margin-bottom: 5px;">Ardian Syla</p>
                                             <p style="font-size: 15px;">Ardian Syla është student i Shkencave Kompjuterike në Fakultetin e Shkencave Matematike Natyrore në Universitetin e Prishtinës. Poashtu tani ka një kohë që është i angazhuar si Full Stack Web Developer.</p>
@@ -78,7 +116,7 @@
                              </div>
                             <div style="margin-bottom: 50px; height: fit-content;">
                                 <div style="display: flex;">
-                                    <p style="align-items: center; display: flex;"><a href="fotoHomePage/Zuckerberg.jpg" class="imageClick"><img src="fotoHomePage/Zuckerberg.jpg" width="110" height="110" alt="foto" style="margin-right: 5px;"></a>
+                                    <p style="align-items: center; display: flex;"><a href="images/Zuckerberg.jpg" class="imageClick"><img src="images/Zuckerberg.jpg" width="110" height="110" alt="foto" style="margin-right: 5px;"></a>
                                         <div style="display: block;">
                                             <p style="font-weight: bold;  color: black; font-size: 18px; margin-bottom: 5px;">Mark Zuckerberg</p>
                                             <p style="font-size: 15px;">Mark Zuckerberg është një sipërmarrës amerikan i teknologjisë. Është i njohur si bashkëthemeluesi dhe drejtori ekzkutiv i Facebook dhe tani ka shprehur dëshirën e tij të flaktë që të marrë pjesë në projektin tonë.</p>
@@ -96,24 +134,24 @@
                                 <p style="word-break: break-word; font-size: 15px;">Së fundi kanë ardhur shumë produkte cilësore nga brendet më të mëdha. </p>
                             </td>
                             <td style="width: 210px; padding-right: 30px;">
-                                <img src="fotoHomePage/Computer0.jpg" width="210" height="140" alt="kompjuter" style="margin-bottom: 10px;">
+                                <img src="images/Computer0.jpg" width="210" height="140" alt="kompjuter" style="margin-bottom: 10px;">
                                 <p style="margin-bottom: 10px;">Laptop Lenovo IdeaPad 5 14IIL05, 14'', Intel Core i7, 16GB RAM, 1TB SSD, Intel Iris Plus Graphics, i hirtë</p>
                                 <a href="#"> Shikoni më shumë</a>
                             </td>
                             <td style="width: 210px; padding-right: 30px;">
-                                <img src="fotoHomePage/Ora0.jpg" width="120" height="140" alt="kompjuter" style="margin-bottom: 10px; margin-left: 30px;">
+                                <img src="images/Ora0.jpg" width="120" height="140" alt="kompjuter" style="margin-bottom: 10px; margin-left: 30px;">
                                 <p style="margin-bottom: 10px;">Orë Apple Watch Series 6, 40mm, Sport Band, Gold, Pink Sand, rezistente nga uji në thellësi 50m</p>
                                 <a href="#"> Shikoni më shumë</a>
                             </td>
                             <td style="width: 210px; padding-right: 30px;">
-                                <img src="fotoHomePage/Karrige0.jpg" width="100" height="140" alt="kompjuter" style="margin-bottom: 10px; margin-left: 35px;">
+                                <img src="images/Karrige0.jpg" width="100" height="140" alt="kompjuter" style="margin-bottom: 10px; margin-left: 35px;">
                                 <p style="margin-bottom: 10px;">Karrigë CZC Fortress GX500, e zezë/kuqe, Gaming, Zbritje 30% vetëm sot</p>
                                 <a href="#"> Shikoni më shumë</a>
                             </td>
                         </tr>
                     </table>
                     <div style="display: flex; height: auto; padding-bottom: 30px; align-items: center;">
-                        <img src="fotoHomePage/twitterPage.jpg" alt="twiiterImageOfLogo" style="margin-right: 20px;">
+                        <img src="images/twitterPage.jpg" alt="twiiterImageOfLogo" style="margin-right: 20px;">
                         <p style="font-size: 20px;">Mund të na gjeni edhe në llogarinë tonë në Twitter, ku mund të shikoni postimet tona në mënyrë që të njoftoheni me kohë për produktet me zbritje.</p>
                     </div>
                 </div>

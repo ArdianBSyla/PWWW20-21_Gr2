@@ -1,4 +1,4 @@
-let slideIndex = 1;
+let slideIndex = 0;
 showSlide(slideIndex);
 
 
@@ -8,12 +8,10 @@ function currentSlide(num) {
 }
 
 function showSlide(n) {
+    console.log(n, " n")
     let i;
     let slides = document.getElementsByClassName('mySlide');
     let rectangles = document.getElementsByClassName('rectangle')
-
-
-
 
     if(n > slides.length){
         slideIndex = 1;
@@ -30,10 +28,16 @@ function showSlide(n) {
     }
 
     console.log(slides);
-    console.log(slideIndex);
-    console.log(rectangles);
-    console.log(slides[slideIndex - 1]);
+    console.log(slides['HTMLCollection'])
+    // console.log(slideIndex);
+    // console.log(rectangles);
+    // console.log(slides[slideIndex - 1]);
 
-    slides[slideIndex -  1].style.display = "block";
-    rectangles[slideIndex - 1].className += " active";
+    // if(slideIndex!=-1){
+    console.log("hini")
+    // slides[slideIndex].style.display = "block";
+    rectangles[slideIndex].className += " active";
+    // }
+    
+    
 }

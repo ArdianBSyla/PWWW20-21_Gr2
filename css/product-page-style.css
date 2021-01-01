@@ -1,0 +1,16 @@
+.product-table td {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.product-table th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.product-table table {
+  margin: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}

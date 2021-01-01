@@ -20,8 +20,9 @@ a:hover {
   background-color: inherit;
   color: #ff9900;
 }
-.imageClick:hover{
-  background-color:#ffff;
+
+.imageClick:hover {
+  background-color: #ffff;
 }
 
 a {

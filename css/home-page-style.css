@@ -1,7 +1,7 @@
 .container {
   width: 1000px;
-  margin:auto;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin-top: 10px;
   margin-bottom: 10px;
   text-transform: none;
@@ -12,15 +12,15 @@ header {
   color: white;
 }
 a:hover {
-  background-color:#ff9900;
+  background-color: #ff9900;
   color: #3f3f3f;
 }
 
-.imageClick:hover{
-  background-color:#ffff;
+.imageClick:hover {
+  background-color: #ffff;
 }
 
-a{
+a {
   color: #ff9900;
   text-decoration: none;
 }
@@ -43,26 +43,26 @@ p {
   border-radius: 10px;
 }
 
-.search-btn{
+.search-btn {
   background-color: #ff9900;
   height: 30px;
   border: none;
   color: white;
 }
 
-.search-btn:hover{
+.search-btn:hover {
   background-color: white;
   color: #ff9900;
   cursor: pointer;
 }
 
 .headParagraph {
-  margin-top: 25px; 
+  margin-top: 25px;
   margin-bottom: 25px;
   color: #666666;
 }
 
-.footerSubmitButton{
+.footerSubmitButton {
   background-color: #3f3f3f;
   border: none;
   height: 30px;
@@ -72,8 +72,8 @@ p {
   border-radius: 10px;
 }
 
-.footerSubmitButton:hover{
-  background-color:#ff9900;
+.footerSubmitButton:hover {
+  background-color: #ff9900;
   color: #3f3f3f;
   cursor: pointer;
 }
@@ -82,12 +82,11 @@ p {
   border-style: solid;
   border-radius: 5px;
 }
-body  {
+body {
   background-image: url(../images/blur3.jpg);
   background-size: cover;
   background-attachment: scroll;
 }
-
 
 .icons {
   width: 250px;
@@ -134,9 +133,8 @@ body  {
 }
 
 .mySlide {
-    display: none;
+  display: none;
 }
-
 
 .fade {
   -webkit-animation-name: fade;
@@ -164,15 +162,15 @@ body  {
 }
 
 .rectangle {
-  background-color: #fe9900; 
-  width: 200px; 
+  background-color: #fe9900;
+  width: 200px;
   height: 15px;
   border-right: 5px;
   border-style: solid;
   border-color: #ffffff;
 }
 
-.active, 
+.active,
 .rectangle:hover {
   background-color: #fff;
   cursor: pointer;

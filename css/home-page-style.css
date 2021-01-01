@@ -16,6 +16,11 @@ a:hover {
   color: #3f3f3f;
 }
 
+#a-here:hover{
+  background-color: inherit;
+  color: #ff9900;
+}
+
 .imageClick:hover {
   background-color: #ffff;
 }

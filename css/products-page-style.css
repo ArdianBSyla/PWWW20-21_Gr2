@@ -12,3 +12,8 @@ products-class {
 .products-class td {
   padding-bottom: 20px;
 }
+
+label {
+  word-break: break-word;
+  color: #868686;
+}

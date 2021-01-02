@@ -116,7 +116,12 @@ p {
   border-style: solid;
   border-radius: 5px;
 }
-body {
+body{
+  background-image: url(../images/blur3.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+}
+#my-img {
   background-image: url(../images/blur3.jpg);
   background-size: cover;
   background-attachment: scroll;

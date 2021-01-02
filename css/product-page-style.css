@@ -14,3 +14,31 @@
   margin: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+#foto-product-one{ 
+  transform: translate(5px, 5px);
+}
+
+#foto-product-two {
+  transform: rotate(20deg);
+}
+
+#foto-three-product {
+  transform: skew(20deg, 10deg);
+}
+
+.scrolli {
+  width: 100px;
+  height: 20px;
+  background: #fe9900;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  0%   {top: 0px; left: 0px; background: orange;}
+  25%  {top: 0px; left: 750px; background: red}
+  50%  {top: 0px; left: 0px; background: orange;}
+  75%  {top: 0px; left: 750px; background: red;}
+  100% {top: 0px; left: 0px; background: orange;}
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="demo.appcache">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/reset.css" type="text/css">
@@ -8,8 +8,20 @@
         <title>AlgoTech</title>
     </head>
     <script src="script/home-page.js"></script>
-    <body>
-        <div class="container">
+    <script>
+        window.onload = function()
+        {   
+            console.log(window.applicationCache)
+            if (typeof(Storage) !== "undefined") {
+                localStorage.setItem("localEmri", "Ardi");
+                sessionStorage.setItem("sessionEmri", "Ardi")
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+            }
+        }
+    </script>
+    <body id="my-img" onload="changeimage(5)">
+       <div class="container"> 
             <header id="headeri">
                 <div>
                     <p>
@@ -149,7 +161,7 @@
                                 </table>
                                 <div style="display: flex; height: auto; padding-bottom: 30px; align-items: center;">
                                     <img src="images/twitterPage.jpg" alt="twiiterImageOfLogo" style="margin-right: 20px;">
-                                    <p style="font-size: 20px; align:left;">Mund të na gjeni edhe në llogarinë tonë në <u><i>Twitter</i></u>, ku mund të shikoni postimet tona në mënyrë që të njoftoheni me kohë për produktet me zbritje.</p>
+                                    <p style="font-size: 20px; align:left;  color: #666666;">Mund të na gjeni edhe në llogarinë tonë në <u><i>Twitter</i></u>, ku mund të shikoni postimet tona në mënyrë që të njoftoheni me kohë për produktet me zbritje.</p>
                                 </div>
                             </div>
                         </section>

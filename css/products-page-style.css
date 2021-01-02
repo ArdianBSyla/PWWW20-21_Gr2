@@ -17,3 +17,19 @@ label {
   word-break: break-word;
   color: #868686;
 }
+
+#foto-product-three {
+  transform: scale(2, 1.2);
+}
+
+#ora-dy-e-nates{
+  transform: rotateX(45deg);
+}
+
+#tastiera {
+  transform: rotateY(45deg);
+}
+
+#shtepiza{
+  transform: rotateZ(90deg);
+}

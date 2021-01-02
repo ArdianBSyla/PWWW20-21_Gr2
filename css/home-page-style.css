@@ -10,7 +10,26 @@ header {
   height: 60px;
   background-color: #3f3f3f;
   color: white;
+  display: flex;
+  align-items: center;
 }
+
+header div {
+  margin-left: 20px;
+}
+
+h2 {
+  color: white; 
+  font-size: 30px; 
+  margin-left: 20px; 
+  margin-right: 20px;
+}
+
+section div div p {
+  color: white; 
+  margin-top: 10px;
+}
+
 a:hover {
   background-color: #ff9900;
   color: #3f3f3f;
@@ -32,6 +51,7 @@ a {
 p {
   word-break: break-word;
   color: #868686;
+  font-size: 15px;
 }
 
 .footerDiv {
@@ -39,12 +59,22 @@ p {
   background-color: #252525;
 }
 
-.footerButton {
+.text-button {
   background-color: #3f3f3f;
   border: none;
   color: #868686;
   height: 30px;
   border-radius: 10px;
+}
+
+#dark-back{
+  background-color: #252525;
+}
+
+.after-head{
+  display: flex; 
+  height: 110px; 
+  align-items: center;
 }
 
 .search-btn {
@@ -101,6 +131,7 @@ body {
   align-items: center;
   right: 0;
   justify-content: flex-end;
+  margin-left: 175px;
 }
 
 .icon {

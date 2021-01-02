@@ -10,18 +10,15 @@
     <script src="script/home-page.js"></script>
     <body>
         <div class="container">
-            <header style="display: flex; align-items: center;">
-                <div style="margin-left: 20px;">
-                    <p style="font-size: 15px;">
-                        <a href="#" class="footerSubmitButton stylesBtn"> HOMEPAGE</a>  |  
-                        <a href="#" class="footerSubmitButton stylesBtn">STYLE DEMO</a>  |  
-                        <a href="#" class="footerSubmitButton stylesBtn">FULL WIDTH</a>  |  
-                        <!-- <a href="#" class="footerSubmitButton stylesBtn">PORTFOLIO</a>  |   -->
-                        <a href="./login.html" target="_blank" class="footerSubmitButton stylesBtn">LOG IN</a>  |  
-                        <a href="./aboutUs.html" class="footerSubmitButton stylesBtn">ABOUT US</a>
+            <header id="headeri">
+                <div>
+                    <p>
+                        <a href="home_page.html" class="footerSubmitButton stylesBtn"> HOMEPAGE</a>  |  
+                        <a href="products.html" class="footerSubmitButton stylesBtn">PRODUCTS</a>  |  
+                        <a href="aboutUs.html" class="footerSubmitButton stylesBtn">ABOUT US</a>  |  
+                        <a href="login.html" target="_blank" class="footerSubmitButton stylesBtn">LOG IN</a>  |  
+                        <a href="signup.html" target="_blank" class="footerSubmitButton stylesBtn">SIGN UP</a>
                     </p>
-
-                    
                 </div>
                 <div class="icons">
                     <a
@@ -46,15 +43,13 @@
                    ></a>
                    <a href="https://rss.app/" target="”_blank”" class="icon icon--rss"></a>   
                  </div>
-
-                
             </header>
-            <section class="start-section" id="">
-                <div style="background-color: #252525;">
-                    <div style="display: flex; height: 110px; align-items: center;">
-                        <h2 style="color: white; font-size: 30px; margin-left: 20px; margin-right: 20px;">AlgoTech</h2>
-                        <p style="color: white; margin-top: 10px;">Pajisuni me kompjuterin më të mirë</p>
-                        <input type="text" style="margin-left: 355px; border-radius: 0px;" class="footerButton" name="search" placeholder="Kërkoni këtu...">
+            <section class="start-section">
+                <div id="dark-back">
+                    <div class="after-head">
+                        <h2>AlgoTech</h2>
+                        <p>Pajisuni me kompjuterin më të mirë</p>
+                        <input type="text" style="margin-left: 355px; border-radius: 0px;" class="text-button" name="search" placeholder="Kërkoni këtu...">
                         <input type="button" value="Search" class="search-btn" name="submit-search-btn">
                     </div>
                     <div style="width: 960px; height: 340px; background-color: #3f3f3f; margin-left: 20px;">
@@ -84,82 +79,82 @@
                 </div>
                 <section style="background-color: #e1e1e1; ">
                     <section style="margin-left: 20px; margin-right: 20px; background-color: #ffffff;">
-                    <section style="margin-left: 30px; margin-right: 30px; ">
-                <div style="height: 55px; margin-left: -30px; margin-right: -30px; background-color: #f0f0f0; align-items: center; display: flex;">
-                    <p style="margin-left: 30px;">Ju jeni në &nbsp; >> &nbsp; <a id="a-here" href="./home_page.html"> HOMEPAGE</a></p>
-                </div>
-                <div>
-                    <h1 style="text-align: center; font-size: 65px; margin-top: 45px; color: #dddddd; font-style: normal;"> MIRË SE VINI NË ALGOTECH</h1>
-                    <p style="font-size: 2rem; text-align: center;"> <span style="font-weight: bold;">AlgoTech</span> është dyqani më i madh online në Kosovë, Shqipëri dhe rajon për produkte teknologjike, me mbi <span style="font-weight: bold;"> 60.000 </span> produkte nga brendet më të njohura botërore.</p>
-                    <hr style="margin-top: 50px; margin-bottom: 50px;">
-                    <div style="margin-bottom: 20px; height:fit-content; display: flex;">
-                        <div style="width: 440px; float: left; word-break: break-all; margin-right: 10px;">
-                            <div style="margin-bottom: 50px; height: fit-content; ">
-                                <p style="color: #666666; font-size: 25px; margin-bottom: 20px;" > Çfarë flasin të tjerët për ne</p>
-                                <p style="align-items: center; display: flex; color: black; font-size: 18px;"> <img src="images/thonjezat.jpg" alt="thonjezat" style="margin-right: 10px; margin-bottom: 5px;"> <b>Elon Musk</b> &nbsp; - &nbsp; <mark><abbr title="Chief Executive Officer">CEO</abbr></mark></p>
-                                <span style="font-size: 15px; color: #868686;">Produket që i punojmë në kompanitë tona si SpaceX, Tesla përbëhen nga pjesët që ne i blejmë nga AlgoTech. Në këtë mënyrë ne jemi të sigurtë që fluturaket tona të shkojnë në destinacionin e duhur në hapësirë.</span>
+                        <section style="margin-left: 30px; margin-right: 30px; ">
+                            <div style="height: 55px; margin-left: -30px; margin-right: -30px; background-color: #f0f0f0; align-items: center; display: flex;">
+                                <p style="margin-left: 30px;">Ju jeni në &nbsp; >> &nbsp; <a id="a-here" href="home_page.html"> HOMEPAGE</a></p>
                             </div>
-                            <div style="margin-bottom: 10px;">
-                                <p style="align-items: center; display: flex; color: black; font-size: 18px;"> <img src="images/thonjezat.jpg" alt="thonjezat" style="margin-right: 10px; margin-bottom: 5px;"> <b>Bill Gates</b> &nbsp; - &nbsp; <mark><abbr title="Chief Executive Officer">CEO</abbr></mark></p>
-                                <span style="font-size: 15px; color: #868686;">Të gjitha produktet në AlgoTech janë origjinale dhe me garancion nga prodhuesi. Ndërkohë, të gjitha porositë e bëra vijnë me transport falas në gjithë Kosovën, deri tek adresa juaj.</span>
-                            </div>
-                        </div>
-                        <div style="width: 440px; float: right; word-break: break-all; margin-left: 10px;">
-                            <div style="margin-bottom: 50px; height: fit-content;">
-                                <p style="color: #666666; font-size: 25px; margin-bottom: 20px;" >Takoni ekipin tonë</p>
-                                <div style="display: flex;">
-                                    <p style="align-items: center; display: flex;"><a href="images/Ardi.jpg" class="imageClick"><img src="images/Ardi.jpg" width="110" height="110" alt="foto" style="margin-right: 5px;"></a>
-                                        <div style="display: block;">
-                                            <p style="font-weight: bold;  color: black; font-size: 18px; margin-bottom: 5px;">Ardian Syla</p>
-                                            <p style="font-size: 15px;">Ardian Syla është student i Shkencave Kompjuterike në Fakultetin e Shkencave Matematike Natyrore në Universitetin e Prishtinës. Poashtu tani ka një kohë që është i angazhuar si Full Stack Web Developer.</p>
-                                        </div> 
-                                    </p>
-                                </div>
-                             </div>
-                            <div style="margin-bottom: 50px; height: fit-content;">
-                                <div style="display: flex;">
-                                    <p style="align-items: center; display: flex;"><a href="images/Zuckerberg.jpg" class="imageClick"><img src="images/Zuckerberg.jpg" width="110" height="110" alt="foto" style="margin-right: 5px;"></a>
-                                        <div style="display: block;">
-                                            <p style="font-weight: bold;  color: black; font-size: 18px; margin-bottom: 5px;">Mark Zuckerberg</p>
-                                            <p style="font-size: 15px;">Mark Zuckerberg është një sipërmarrës amerikan i teknologjisë. Është i njohur si bashkëthemeluesi dhe drejtori ekzkutiv i Facebook dhe tani ka shprehur dëshirën e tij të flaktë që të marrë pjesë në projektin tonë.</p>
+                            <div>
+                                <h1 style="text-align: center; font-size: 65px; margin-top: 45px; color: #dddddd; font-style: normal;"> MIRË SE VINI NË ALGOTECH</h1>
+                                <p style="font-size: 2rem; text-align: center;"> <span style="font-weight: bold;">AlgoTech</span> është dyqani më i madh online në Kosovë, Shqipëri dhe rajon për produkte teknologjike, me mbi <span style="font-weight: bold;"> 60.000 </span> produkte nga brendet më të njohura botërore.</p>
+                                <hr style="margin-top: 50px; margin-bottom: 50px;">
+                                <div style="margin-bottom: 20px; height:fit-content; display: flex;">
+                                    <div style="width: 440px; float: left; word-break: break-all; margin-right: 10px;">
+                                        <div style="margin-bottom: 50px; height: fit-content; ">
+                                            <p style="color: #666666; font-size: 25px; margin-bottom: 20px;" > Çfarë flasin të tjerët për ne</p>
+                                            <p style="align-items: center; display: flex; color: black; font-size: 18px;"> <img src="images/thonjezat.jpg" alt="thonjezat" style="margin-right: 10px; margin-bottom: 5px;"> <b>Elon Musk</b> &nbsp; - &nbsp; <mark><abbr title="Chief Executive Officer">CEO</abbr></mark></p>
+                                            <span style="font-size: 15px; color: #868686;">Produket që i punojmë në kompanitë tona si SpaceX, Tesla përbëhen nga pjesët që ne i blejmë nga AlgoTech. Në këtë mënyrë ne jemi të sigurtë që fluturaket tona të shkojnë në destinacionin e duhur në hapësirë.</span>
                                         </div>
-                                    </p>
+                                        <div style="margin-bottom: 10px;">
+                                            <p style="align-items: center; display: flex; color: black; font-size: 18px;"> <img src="images/thonjezat.jpg" alt="thonjezat" style="margin-right: 10px; margin-bottom: 5px;"> <b>Bill Gates</b> &nbsp; - &nbsp; <mark><abbr title="Chief Executive Officer">CEO</abbr></mark></p>
+                                            <span style="font-size: 15px; color: #868686;">Të gjitha produktet në AlgoTech janë origjinale dhe me garancion nga prodhuesi. Ndërkohë, të gjitha porositë e bëra vijnë me transport falas në gjithë Kosovën, deri tek adresa juaj.</span>
+                                        </div>
+                                    </div>
+                                    <div style="width: 440px; float: right; word-break: break-all; margin-left: 10px;">
+                                        <div style="margin-bottom: 50px; height: fit-content;">
+                                            <p style="color: #666666; font-size: 25px; margin-bottom: 20px;" >Takoni ekipin tonë</p>
+                                            <div style="display: flex;">
+                                                <p style="align-items: center; display: flex;"><a href="images/Ardi.jpg" class="imageClick"><img src="images/Ardi.jpg" width="110" height="110" alt="foto" style="margin-right: 5px;"></a>
+                                                    <div style="display: block;">
+                                                        <p style="font-weight: bold;  color: black; font-size: 18px; margin-bottom: 5px;">Ardian Syla</p>
+                                                        <p>Ardian Syla është student i Shkencave Kompjuterike në Fakultetin e Shkencave Matematike Natyrore në Universitetin e Prishtinës. Poashtu tani ka një kohë që është i angazhuar si Full Stack Web Developer.</p>
+                                                    </div> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div style="margin-bottom: 50px; height: fit-content;">
+                                            <div style="display: flex;">
+                                                <p style="align-items: center; display: flex;"><a href="images/Zuckerberg.jpg" class="imageClick"><img src="images/Zuckerberg.jpg" width="110" height="110" alt="foto" style="margin-right: 5px;"></a>
+                                                    <div style="display: block;">
+                                                        <p style="font-weight: bold;  color: black; font-size: 18px; margin-bottom: 5px;">Mark Zuckerberg</p>
+                                                        <p>Mark Zuckerberg është një sipërmarrës amerikan i teknologjisë. Është i njohur si bashkëthemeluesi dhe drejtori ekzkutiv i Facebook dhe tani ka shprehur dëshirën e tij të flaktë që të marrë pjesë në projektin tonë.</p>
+                                                    </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style="margin-top: 30px; margin-bottom: 50px;">
+                                <table style="margin-bottom: 50px;">
+                                    <tr>
+                                        <td style="width: 200px; display: block; margin-right: 20px;">
+                                            <p style="color: #666666; font-size: 25px; margin-bottom: 20px;"> Punët e fundit</p>
+                                            <p style="word-break: break-word;">Së fundi kanë ardhur shumë produkte cilësore nga brendet më të mëdha. </p>
+                                        </td>
+                                        <td style="width: 210px; padding-right: 30px;">
+                                            <img src="images/Computer0.jpg" width="210" height="140" alt="kompjuter" style="margin-bottom: 10px;">
+                                            <p style="margin-bottom: 10px;">Laptop Lenovo IdeaPad 5 14IIL05, 14'', Intel Core i7, 16GB RAM, 1TB SSD, Intel Iris Plus Graphics, i hirtë</p>
+                                            <a href="./product.html"> Shikoni më shumë</a>
+                                        </td>
+                                        <td style="width: 210px; padding-right: 30px;">
+                                            <img src="images/Ora0.jpg" width="120" height="140" alt="kompjuter" style="margin-bottom: 10px; margin-left: 30px;">
+                                            <p style="margin-bottom: 10px;">Orë Apple Watch Series 6, 40mm, Sport Band, Gold, Pink Sand, rezistente nga uji në thellësi 50m</p>
+                                            <a href="./product.html"> Shikoni më shumë</a>
+                                        </td>
+                                        <td style="width: 210px; padding-right: 30px;">
+                                            <img src="images/Karrige0.jpg" width="100" height="140" alt="kompjuter" style="margin-bottom: 10px; margin-left: 35px;">
+                                            <p style="margin-bottom: 10px;">Karrigë CZC Fortress GX500, e zezë/kuqe, Gaming, Zbritje 30% vetëm sot</p>
+                                            <a href="./product.html"> Shikoni më shumë</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div style="display: flex; height: auto; padding-bottom: 30px; align-items: center;">
+                                    <img src="images/twitterPage.jpg" alt="twiiterImageOfLogo" style="margin-right: 20px;">
+                                    <p style="font-size: 20px; align:left;">Mund të na gjeni edhe në llogarinë tonë në <u><i>Twitter</i></u>, ku mund të shikoni postimet tona në mënyrë që të njoftoheni me kohë për produktet me zbritje.</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <hr style="margin-top: 30px; margin-bottom: 50px;">
-                    <table style="margin-bottom: 50px;">
-                        <tr>
-                            <td style="width: 200px; display: block; margin-right: 20px;">
-                                <p style="color: #666666; font-size: 25px; margin-bottom: 20px;"> Punët e fundit</p>
-                                <p style="word-break: break-word; font-size: 15px;">Së fundi kanë ardhur shumë produkte cilësore nga brendet më të mëdha. </p>
-                            </td>
-                            <td style="width: 210px; padding-right: 30px;">
-                                <img src="images/Computer0.jpg" width="210" height="140" alt="kompjuter" style="margin-bottom: 10px;">
-                                <p style="margin-bottom: 10px;">Laptop Lenovo IdeaPad 5 14IIL05, 14'', Intel Core i7, 16GB RAM, 1TB SSD, Intel Iris Plus Graphics, i hirtë</p>
-                                <a href="./product.html"> Shikoni më shumë</a>
-                            </td>
-                            <td style="width: 210px; padding-right: 30px;">
-                                <img src="images/Ora0.jpg" width="120" height="140" alt="kompjuter" style="margin-bottom: 10px; margin-left: 30px;">
-                                <p style="margin-bottom: 10px;">Orë Apple Watch Series 6, 40mm, Sport Band, Gold, Pink Sand, rezistente nga uji në thellësi 50m</p>
-                                <a href="./product.html"> Shikoni më shumë</a>
-                            </td>
-                            <td style="width: 210px; padding-right: 30px;">
-                                <img src="images/Karrige0.jpg" width="100" height="140" alt="kompjuter" style="margin-bottom: 10px; margin-left: 35px;">
-                                <p style="margin-bottom: 10px;">Karrigë CZC Fortress GX500, e zezë/kuqe, Gaming, Zbritje 30% vetëm sot</p>
-                                <a href="./product.html"> Shikoni më shumë</a>
-                            </td>
-                        </tr>
-                    </table>
-                    <div style="display: flex; height: auto; padding-bottom: 30px; align-items: center;">
-                        <img src="images/twitterPage.jpg" alt="twiiterImageOfLogo" style="margin-right: 20px;">
-                        <p style="font-size: 20px; align:left;">Mund të na gjeni edhe në llogarinë tonë në <u><i>Twitter</i></u>, ku mund të shikoni postimet tona në mënyrë që të njoftoheni me kohë për produktet me zbritje.</p>
-                    </div>
-                </div>
-            </section>
-            </section>
-            </section>
+                        </section>
+                    </section>
+                </section>
             </section>
             <footer class="footerDiv">
                 <div style="display: flex; height: 216px; margin: 0px 20px 0px 20px">
@@ -182,7 +177,7 @@
                     </div>
                     <div style="width: 225px; margin-right: 20px;">
                         <p class="headParagraph">NGA FAQJA</p>
-                        <p style="font-size: 15px;"><b>Zbritje në Algo Tech</b></p>
+                        <p><b>Zbritje në Algo Tech</b></p>
                         <p>Postuar nga Gashi.</p>
                         <p style="margin-top: 8px; margin-bottom: 8px;">Këtë javë kemi zbritje të madhe në Algo Tech. Zbritja përfshinë shumë produkte të shumë kërkuara.</p>
                         <a style="float: right; font-size: 12px;" href="./aboutUs.html">Lexoni më shumë >></a>
@@ -190,10 +185,10 @@
                     <div style="width: 225px; margin-right: 20px;">
                         <p class="headParagraph">MERRNI NJOFTIMET TONA</p>
                         <form action="#" method="post">
-                            <input type="text" placeholder=" Emri:" class="footerButton">
-                            <input type="email" name="" id="" placeholder=" Email:" class="footerButton" style="margin-top: 15px;">
+                            <input type="text" placeholder=" Emri:" class="text-button">
+                            <input type="email" name="" id="" placeholder=" Email:" class="text-button" style="margin-top: 15px;">
                             <input type="submit" value="DËRGO" class="footerSubmitButton">
-                            <a href="#" class="footerSubmitButton" style="padding-left: 5px; padding: 5px; margin-left: 35px;">KTHEHU</a>
+                            <a href="#headeri" class="footerSubmitButton" style="padding-left: 5px; padding: 5px; margin-left: 35px;">KTHEHU</a>
                         </form>
                     </div>
                 </div>
@@ -201,7 +196,6 @@
                     <p style="margin-left: 20px;">Copyright &copy; 2020 - All Rights Reserved - Algo Tech</p>
                 </div>
             </footer>
-    
         </div>
     </body>
 </html>

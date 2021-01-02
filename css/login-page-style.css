@@ -34,20 +34,3 @@ label {
   color: #ff9900;
   cursor: pointer;
 }
-
-.td,
-.tr,
-.th {
-  border: 1px solid black;
-}
-
-#application-form > label {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  width: 80%;
-  padding-bottom: 1.5rem;
-}
-#application-form input, select {
-  margin-left: 1rem;
-}

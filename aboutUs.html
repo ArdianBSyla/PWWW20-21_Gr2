@@ -86,7 +86,21 @@
                     <p style="margin-left: 30px;">You are here &nbsp; >> &nbsp; PRODUCTS PAGE</p>
                 </div>
                 <div style="padding: 20px;">
-                    <p style="font-size: 30px;">RRETH NESH</p>
+                    <p style="font-size: 30px; margin-bottom: 100px;">RRETH NESH</p>
+                    <canvas id="myCanvas" width="580" height="60" style="border:1px solid #c3c3c3;">
+                    </canvas>
+                    <script>
+                        var canvas = document.getElementById("myCanvas");
+                        var ctx = canvas.getContext("2d");
+                        var grd = ctx.createLinearGradient(0, 190, 1900, 190);
+                        grd.addColorStop(0, "orange");
+                        grd.addColorStop(1, "red");
+                        ctx.fillStyle = grd;
+                        ctx.font = "30px Georgia";
+                        ctx.fillStyle = grd;
+                        ctx.fillText("TE DHENAT RRETH KOMPANIS TONE", 20, 40);
+                    </script>
+                    </canvas>
                     <hr size="1" width="100%" color="orange">
                     <div style="padding: 20px;">
                         <p style="color: #3f3f3f;">AlgoTech, Inc., është kompani amerikane, e themeluar në SHBA. AlgoTech është platformë e përmbajtjes me video dhe studio të produksionit dhe kompani lidere e shitjes online; AlgoTech udhëheq me shërbime të internetit offline në online në Ballkan dhe Diasporën Shqiptare. 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="demo.appcache">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/reset.css" type="text/css">
@@ -9,53 +9,52 @@
             Regjistrohuni
         </title>
     </head>
-    <body>
-        <div class="container">
-            <header style="display: flex; align-items: center;">
-                <div style="margin-left: 20px;">
-                    <p style="font-size: 15px;">
-                        <a href="#" class="footerSubmitButton stylesBtn"> HOMEPAGE</a>  |  
-                        <a href="#" class="footerSubmitButton stylesBtn">STYLE DEMO</a>  |  
-                        <a href="#" class="footerSubmitButton stylesBtn">FULL WIDTH</a>  |  
-                        <!-- <a href="#" class="footerSubmitButton stylesBtn">PORTFOLIO</a>  |   -->
-                        <a href="#" class="footerSubmitButton stylesBtn">GALLERY</a>  |  
-                        <a href="#" class="footerSubmitButton stylesBtn">DROPDOWN</a>
-                    </p>
-                </div>
-                <div class="icons">
-                    <a
-                     href="https://www.linkedin.com/"
-                     target="”_blank”"
-                     class="icon icon--linkedin"
-                   ></a>
-                   <a
-                     href="https://www.twitter.com/"
-                     target="”_blank”"
-                     class="icon icon--twitter"
-                   ></a>
-                   <a
-                     href="https://www.pinterest.com/"
-                     target="”_blank”"
-                     class="icon icon--pinterest"
-                   ></a>
-                   <a
-                     href="mailto:ardianbsyla@gmail.com?subject = Feedback&body = Message"
-                     target="”_blank”"
-                     class="icon icon--google-plus"
-                   ></a>
-                   <a href="https://rss.app/" target="”_blank”" class="icon icon--rss"></a>   
+    <script src="script/validations.js"></script>
+    <script src="script/home-page.js"></script>
+    <body id="my-img" onload="changeimage(5)">
+        <div class="container"> 
+             <header id="headeri">
+                 <div>
+                     <p>
+                         <a href="home_page.html" class="footerSubmitButton stylesBtn"> HOMEPAGE</a>  |  
+                         <a href="products.html" class="footerSubmitButton stylesBtn">PRODUCTS</a>  |  
+                         <a href="aboutUs.html" class="footerSubmitButton stylesBtn">ABOUT US</a>  |  
+                         <a href="login.html" target="_blank" class="footerSubmitButton stylesBtn">LOG IN</a>  |  
+                         <a href="signup.html" target="_blank" class="footerSubmitButton stylesBtn">SIGN UP</a>
+                     </p>
                  </div>
-
-                
-            </header>
-            <section class="start-section" >
-                <div style="background-color: #252525;">
-                    <div style="display: flex; height: 110px; align-items: center;">
-                        <h2 style="color: white; font-size: 30px; margin-left: 20px; margin-right: 20px;">AlgoTech</h2>
-                        <p style="color: white; margin-top: 10px;">Pajisuni me kompjuterin më të mirë</p>
-                        <input type="text" style="margin-left: 260px; border-radius: 0px;" class="footerButton" name="search" placeholder="Kërkoni këtu...">
-                        <input type="button" value="Search" class="search-btn" name="submit-search-btn">
-                    </div>
+                 <div class="icons">
+                     <a
+                      href="https://www.linkedin.com/"
+                      target="”_blank”"
+                      class="icon icon--linkedin"
+                    ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      target="”_blank”"
+                      class="icon icon--twitter"
+                    ></a>
+                    <a
+                      href="https://www.pinterest.com/"
+                      target="”_blank”"
+                      class="icon icon--pinterest"
+                    ></a>
+                    <a
+                      href="mailto:ardianbsyla@gmail.com?subject = Feedback&body = Message"
+                      target="”_blank”"
+                      class="icon icon--google-plus"
+                    ></a>
+                    <a href="https://rss.app/" target="”_blank”" class="icon icon--rss"></a>   
+                  </div>
+             </header>
+             <section class="start-section">
+                 <div id="dark-back">
+                     <div id="div-for-err" class="after-head">
+                         <h2>AlgoTech</h2>
+                         <p>Pajisuni me kompjuterin m&#235; t&#235; mir&#235;</p>
+                         <input type="text" style="margin-left: 355px; border-radius: 0px;" class="text-button" name="search" placeholder="Kërkoni këtu...">
+                         <input type="button" value="Search" class="search-btn" name="submit-search-btn">
+                     </div>
                     <div style="width: 960px; height: auto; background-color: #3f3f3f; margin-left: 20px;">
                         <br>
                         <br>
@@ -82,29 +81,41 @@
                                         <img src="icons/signUp-image.png" alt="login" height="400">
                                     </td>
                                     <td>
-                                        <form action="#" method="post" >
+                                        <form name="signupForm" action="#" method="post" onsubmit="return validateSignupForm()">
                                             <p style="padding-left: 140px;">REGJISTROHUNI</p>
                                             <div >
-                                                <label for="username" style="display: table-cell; color:#868686;">Emri : <input type="text" placeholder=" Name" class="footerButton" background style="width: 200px; ; background-color: aliceblue; margin-left: 170px;"> </label>
+                                                <label>Emri : <input type="text" name="emri" placeholder=" Name" class="text-button" style="width: 200px; background-color: aliceblue; margin-left: 170px;">
+                                                <p id="nameErrorValidation"></p>
+                                                </label>
                                             </div>
                                             <div >
-                                                <label for="username" style="display: table-cell; color:#868686;">Mbiemri: <input type="text" placeholder=" Surname" class="footerButton" background style="width: 200px; ; background-color: aliceblue; margin-left: 150px;"> </label>
+                                                <label>Mbiemri: <input type="text" name="mbiemri" placeholder=" Surname" class="text-button" style="width: 200px; background-color: aliceblue; margin-left: 150px;"> 
+                                                <p id="surnameErrorValidation"></p>
+                                                </label>
                                             </div>
                                             <div >
-                                                <label for="username" style="display: table-cell; color:#868686;">Emaili: <input type="email" placeholder=" Email" class="footerButton" background style="width: 200px; ; background-color: aliceblue; margin-left: 169px;"> </label>
+                                                <label>Emaili: <input name="email" placeholder=" Email" class="text-button" style="width: 200px; background-color: aliceblue; margin-left: 169px;"> 
+                                                <p id="emailErrorValidation"></p>
+                                                </label>
                                             </div>
                                             <div>
-                                                <label for="username" style="display: table-cell; color:#868686;">Emri i perdoruesit: <input type="text" placeholder=" Username" class="footerButton" background style="width: 200px; ; background-color: aliceblue; margin-left: 80px;"> </label>
+                                                <label>Emri i perdoruesit: <input type="text" name="username" placeholder=" Username" class="text-button" style="width: 200px; background-color: aliceblue; margin-left: 80px;"> 
+                                                <p id="usernameErrorValidation"></p>
+                                                </label>
                                             </div>
                                             <div >
-                                                <label for="username" style="display: table-cell; color:#868686;">Fjalekalimi: <input type="password" placeholder=" Pasword" class="footerButton" background style="width: 200px; ; background-color: aliceblue; margin-left: 135px;"> </label>
+                                                <label>Fjalekalimi: <input type="password" name="password1" placeholder=" Pasword" class="text-button" style="width: 200px; background-color: aliceblue; margin-left: 135px;"> 
+                                                <p id="passowrd1ErrorValidation"></p>
+                                                </label>
                                             </div>
                                             <div >
-                                                <label for="username" style="display: table-cell; color:#868686;">Shtyp perseri fjalekalimin : <input type="password" placeholder=" Pasword" class="footerButton" background style="width: 200px; ; background-color: aliceblue; margin-left: 20px;"> </label>
+                                                <label>Shtyp perseri fjalekalimin : <input type="password" name="password2" placeholder=" Pasword" class="text-button" style="width: 200px; background-color: aliceblue; margin-left: 20px;"> 
+                                                <p id="password2ErrorValidation"></p>
+                                                </label>
                                             </div>
                                             
                                             <div >
-                                                <label for="username" style="display: table-cell; color:#868686;">Data e lindjes: <input type="date" placeholder=" Username" class="footerButton" background style="width: 200px; ; background-color: aliceblue; margin-left: 119px;"> </label>
+                                                <label>Data e lindjes: <input type="date" placeholder=" Username" class="text-button" style="width: 200px; background-color: aliceblue; margin-left: 119px;"> </label>
                                             </div>
                                             <div style=" margin-left: 70px;" >
                                                 <p style="font-size: 18px;">Gjinia :
@@ -131,8 +142,8 @@
             </section>
             </section>
             <footer class="footerDiv">
-                <div style="display: flex; height: 216px; margin: 0px 20px 0px 20px">
-                    <div style="width: 225px; margin-right: 20px;   ">
+                <div class="st-footer-div">
+                    <address>
                         <p class="headParagraph">KONTAKTI</p>
                         <p>Algo Tech</p>
                         <p>Rr.Zahir Pajaziti, 10000</p>
@@ -141,35 +152,37 @@
                         <p>Tel: +383 (0) 44 123 123</p>
                         <p>Fax: +383 (0) 44 123 123</p>
                         <p>Email: ardianbsyla@gmail.com</p>
-                    </div>
-                    <div style="width: 225px; margin-right: 20px;">   
+                    </address>
+                    <div>   
                         <p class="headParagraph">LINQE TE SHPEJTA</p>
                         <p><a href="http://www.facebook.com">Facebook</a></p><hr>
                         <p><a href="http://www.twitter.com">Twitter</a></p><hr>
                         <p><a href="http://www.linkedin.com">Linkedin</a></p><hr>
                         <p><a href="http://www.youtube.com">Youtube</a></p><hr>
                     </div>
-                    <div style="width: 225px; margin-right: 20px;">
+                    <div>
                         <p class="headParagraph">NGA FAQJA</p>
-                        <p style="font-size: 15px;"><b>Zbritje në Algo Tech</b></p>
+                        <p><b>Zbritje në Algo Tech</b></p>
                         <p>Postuar nga Gashi.</p>
-                        <p style="margin-top: 8px; margin-bottom: 8px;">Këtë javë kemi zbritje të madhe në Algo Tech. Zbritja përfshinë shumë produkte të shumë kërkuara.</p>
-                        <a style="float: right; font-size: 12px;" href="#">Lexoni më shumë >></a>
+                        <p class="notif-p">Këtë javë kemi zbritje të madhe në Algo Tech. Zbritja përfshinë shumë produkte të shumë kërkuara.</p>
+                        <a class="notif-a" href="./aboutUs.html">Lexoni më shumë >></a>
                     </div>
-                    <div style="width: 225px; margin-right: 20px;">
+                    <div>
                         <p class="headParagraph">MERRNI NJOFTIMET TONA</p>
-                        <form action="#" method="post">
-                            <input type="text" placeholder=" Emri:" class="footerButton">
-                            <input type="email" name="" id="" placeholder=" Email:" class="footerButton" style="margin-top: 15px;">
-                            <input type="submit" value="SUBMIT" class="footerSubmitButton">
+                        <form name="contactForm" method="post" onsubmit="return validateContactForm()">
+                            <input type="text" name="emri" placeholder=" Emri:" class="text-button">
+                            <p id="nameContactValidation"></p>
+                            <input   name="email"  placeholder=" Email:" class="text-button" style="margin-top: 15px;">
+                            <p id="emailContactValidation"></p>
+                            <input type="submit" value="DËRGO" class="footerSubmitButton">
+                            <a href="#headeri" class="footerSubmitButton kthehu-btn" >KTHEHU</a>
                         </form>
                     </div>
                 </div>
-                <div style="display: flex; align-items: center; height: 60px; background-color: #000000;">
-                    <p style="margin-left: 20px;">Copyright &copy; 2020 - All Rights Reserved - Algo Tech</p>
+                <div class="last-footer-div">
+                    <p>Copyright &copy; 2020 - All Rights Reserved - Algo Tech</p>
                 </div>
             </footer>
-    
         </div>
     </body>
 </html>

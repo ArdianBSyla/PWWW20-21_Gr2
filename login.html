@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html manifest="demo.appcache">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/home-page-style.css" type="text/css">
         <link rel="stylesheet" href="css/login-page-style.css" type="text/css">
-        <title>
-            KYÇU
-        </title>
+        <title>AlgoTech</title>
     </head>
-    <body>
-        <div class="container">
-            <header style="display: flex; align-items: center;">
-                <div style="margin-left: 20px;">
-                    <p style="font-size: 15px;">
+    <script src="script/home-page.js"></script>
+    <script src="script/validations.js"></script>
+    <body id="my-img" onload="changeimage(5)">
+       <div class="container"> 
+            <header id="headeri">
+                <div>
+                    <p>
                         <a href="home_page.html" class="footerSubmitButton stylesBtn"> HOMEPAGE</a>  |  
                         <a href="products.html" class="footerSubmitButton stylesBtn">PRODUCTS</a>  |  
                         <a href="aboutUs.html" class="footerSubmitButton stylesBtn">ABOUT US</a>  |  
-                        <a href="login.html" class="footerSubmitButton stylesBtn">LOG IN</a>  |  
-                        <a href="signup.html" class="footerSubmitButton stylesBtn">SIGN UP</a>
+                        <a href="login.html" target="_blank" class="footerSubmitButton stylesBtn">LOG IN</a>  |  
+                        <a href="signup.html" target="_blank" class="footerSubmitButton stylesBtn">SIGN UP</a>
                     </p>
                 </div>
                 <div class="icons">
@@ -44,67 +44,70 @@
                    ></a>
                    <a href="https://rss.app/" target="”_blank”" class="icon icon--rss"></a>   
                  </div>
-
-                
             </header>
-            <section class="start-section" >
-                <div style="background-color: #252525;">
-                    <div style="display: flex; height: 110px; align-items: center;">
-                        <h2 style="color: white; font-size: 30px; margin-left: 20px; margin-right: 20px;">AlgoTech</h2>
-                        <p style="color: white; margin-top: 10px;">Pajisuni me kompjuterin më të mirë</p>
-                        <input type="text" style="margin-left: 260px; border-radius: 0px;" class="text-button" name="search" placeholder="Kërkoni këtu...">
+            <section class="start-section">
+                <div id="dark-back">
+                    <div class="after-head">
+                        <h2>AlgoTech</h2>
+                        <p>Pajisuni me kompjuterin m&#235; t&#235; mir&#235;</p>
+                        <input type="text" style="margin-left: 355px; border-radius: 0px;" class="text-button" name="search" placeholder="Kërkoni këtu...">
                         <input type="button" value="Search" class="search-btn" name="submit-search-btn">
                     </div>
-                    <div style="width: 960px; height: auto; background-color: #3f3f3f; margin-left: 20px; padding-bottom: 50px;">
-                        <br>
-                        <br>
-                        <div style="margin-left: 50px;" >
-                            <form action="" style="padding: 20px;">
-                                <svg height="130" width="500">
-                                    <defs>
-                                      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%"
-                                        style="stop-color:rgb(255,255,0);stop-opacity:1" />
-                                        <stop offset="100%"
-                                        style="stop-color:rgb(255,0,0);stop-opacity:1" />
-                                      </linearGradient>
-                                    </defs>
-                                    <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
-                                    <text fill="#ffffff" font-size="35" font-family="Georgia"
-                                    x="30" y="86">AlgoTech</text>
-                                  Sorry, your browser does not support inline SVG.
-                                  </svg>
-                                </form>
-                            <table>
-                                <tr>
-                                    <td>
-                                        <img src="icons/login-image.png" alt="login" width=380px>
-                                    </td>
-                                    <td>
-                                        <form action="#" method="post" style="margin-top: 400x;">
-                                            <p style="margin-left: 185px;">KYÇUNI</p>
-                                            <div style="margin: 40px;">
-                                                <!-- <p style="font-size: 18px;">Emri i perdoruesit :<input type="text" placeholder=" Username" class="text-button" background style="width: 200px; margin-left: 20px; background-color: aliceblue;"></p> -->
-                                                <label for="username" style="display: table-cell; color:#868686;">Emri i perdoruesit: <input type="text" placeholder=" Username" class="text-button" background style="width: 200px; ; background-color: aliceblue; margin-left: 20px;"> </label>
-                                            <div >
-                                                <label for="username" style="display: table-cell; color:#868686;">Fjalkalimi: <input type="password" placeholder=" Pasword" minlength="8" required class="text-button" background style="width: 200px;  background-color: aliceblue; margin-left: 80px;"> </label>
-                                                <!-- <p style="font-size: 18px;">Fjalkalimi :<input type="password" placeholder=" Pasword" minlength="8" required class="text-button" background style="width: 200px; margin-left: 85px; background-color: aliceblue;"></p> -->
-                                            </div>
-                                            <input type="submit" value="Kyçuni" class="Login-btn" style="margin-left: 280px; ">
+                <section class="st-section">
+                    <section class="nd-section">
+                        <section class="rd-section">
+                            <div style="width: 1000px; height: auto; background-color: #3f3f3f; margin-left: -50px; padding-bottom: 50px;">
+                                <br>
+                                <br>
+                                <div style="margin-left: 50px;" >
+                                    <form action="" style="padding: 20px;">
+                                        <svg height="130" width="500">
+                                            <defs>
+                                              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%"
+                                                style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                                                <stop offset="100%"
+                                                style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                                              </linearGradient>
+                                            </defs>
+                                            <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                                            <text fill="#ffffff" font-size="35" font-family="Georgia"
+                                            x="30" y="86">AlgoTech</text>
+                                          Sorry, your browser does not support inline SVG.
+                                          </svg>
                                         </form>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            </section>
-            </section>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="icons/login-image.png" alt="login" width=380px>
+                                            </td>
+                                            <td>
+                                                <form name="loginForm" method="post" style="margin-top: 400x;" onsubmit="return validateLogInForm()">
+                                                    <p style="margin-left: 185px;">KYÇUNI</p>
+                                                    <div style="margin: 40px;">
+                                                       <label>Emri i perdoruesit: <input type="text" name="username" placeholder=" Username" class="text-button" style="width: 200px; background-color: aliceblue; margin-left: 20px;">
+                                                        <p id="usernameErrorValidation"></p> 
+                                                    </label>
+                                                    <div >
+                                                        <label>Fjalkalimi: <input type="password" name="password" placeholder=" Pasword" class="text-button" style="width: 200px;  background-color: aliceblue; margin-left: 80px;"> 
+                                                        <p id="passwordErrorValidation"></p>
+                                                        </label>
+                                                    </div>
+                                                    <input type="submit" value="Kyçuni" class="Login-btn" style="margin-left: 280px; ">
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                        </section>
+                    </section>
+                </section>
             </section>
             <footer class="footerDiv">
-                <div style="display: flex; height: 216px; margin: 0px 20px 0px 20px">
-                    <div style="width: 225px; margin-right: 20px;   ">
+                <div class="st-footer-div">
+                    <address>
                         <p class="headParagraph">KONTAKTI</p>
                         <p>Algo Tech</p>
                         <p>Rr.Zahir Pajaziti, 10000</p>
@@ -113,35 +116,37 @@
                         <p>Tel: +383 (0) 44 123 123</p>
                         <p>Fax: +383 (0) 44 123 123</p>
                         <p>Email: ardianbsyla@gmail.com</p>
-                    </div>
-                    <div style="width: 225px; margin-right: 20px;">   
+                    </address>
+                    <div>   
                         <p class="headParagraph">LINQE TE SHPEJTA</p>
                         <p><a href="http://www.facebook.com">Facebook</a></p><hr>
                         <p><a href="http://www.twitter.com">Twitter</a></p><hr>
                         <p><a href="http://www.linkedin.com">Linkedin</a></p><hr>
                         <p><a href="http://www.youtube.com">Youtube</a></p><hr>
                     </div>
-                    <div style="width: 225px; margin-right: 20px;">
+                    <div>
                         <p class="headParagraph">NGA FAQJA</p>
-                        <p style="font-size: 15px;"><b>Zbritje në Algo Tech</b></p>
+                        <p><b>Zbritje në Algo Tech</b></p>
                         <p>Postuar nga Gashi.</p>
-                        <p style="margin-top: 8px; margin-bottom: 8px;">Këtë javë kemi zbritje të madhe në Algo Tech. Zbritja përfshinë shumë produkte të shumë kërkuara.</p>
-                        <a style="float: right; font-size: 12px;" href="#">Lexoni më shumë >></a>
+                        <p class="notif-p">Këtë javë kemi zbritje të madhe në Algo Tech. Zbritja përfshinë shumë produkte të shumë kërkuara.</p>
+                        <a class="notif-a" href="./aboutUs.html">Lexoni më shumë >></a>
                     </div>
-                    <div style="width: 225px; margin-right: 20px;">
+                    <div>
                         <p class="headParagraph">MERRNI NJOFTIMET TONA</p>
-                        <form action="#" method="post">
-                            <input type="text" placeholder=" Emri:" class="text-button">
-                            <input type="email" name="" id="" placeholder=" Email:" class="text-button" style="margin-top: 15px;">
-                            <input type="submit" value="SUBMIT" class="footerSubmitButton">
+                        <form name="contactForm" method="post" onsubmit="return validateContactForm()">
+                            <input type="text" name="emri" placeholder=" Emri:" class="text-button">
+                            <p id="nameContactValidation"></p>
+                            <input   name="email"  placeholder=" Email:" class="text-button" style="margin-top: 15px;">
+                            <p id="emailContactValidation"></p>
+                            <input type="submit" value="DËRGO" class="footerSubmitButton">
+                            <a href="#headeri" class="footerSubmitButton kthehu-btn" >KTHEHU</a>
                         </form>
                     </div>
                 </div>
-                <div style="display: flex; align-items: center; height: 60px; background-color: #000000;">
-                    <p style="margin-left: 20px;">Copyright &copy; 2020 - All Rights Reserved - Algo Tech</p>
+                <div class="last-footer-div">
+                    <p>Copyright &copy; 2020 - All Rights Reserved - Algo Tech</p>
                 </div>
             </footer>
-    
         </div>
     </body>
 </html>

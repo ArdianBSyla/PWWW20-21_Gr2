@@ -81,8 +81,8 @@
                                         <img src="icons/signUp-image.png" alt="login" height="400">
                                     </td>
                                     <td>
-                                        <form name="signupForm" action="#" method="post" onsubmit="return validateSignupForm()">
-                                            <p style="padding-left: 140px;">REGJISTROHUNI</p>
+                                        <form name="signupForm" action="http://www.randyconnolly.com/tests/process.php" method="post" onsubmit="return validateSignupForm()">
+                                            <p style="padding-left: 140px; color: #868686;">REGJISTROHUNI</p>
                                             <div >
                                                 <label>Emri : <input type="text" name="emri" placeholder=" Name" class="text-button" style="width: 200px; background-color: aliceblue; margin-left: 170px;">
                                                 <p id="nameErrorValidation"></p>
@@ -115,19 +115,22 @@
                                             </div>
                                             
                                             <div >
-                                                <label>Data e lindjes: <input type="date" placeholder=" Username" class="text-button" style="width: 200px; background-color: aliceblue; margin-left: 119px;"> </label>
+                                                <label>Data e lindjes: <input type="date" name="datelindja" placeholder=" Username" class="text-button" style="width: 200px; background-color: aliceblue; margin-left: 119px;"> </label>
                                             </div>
-                                            <div style=" margin-left: 70px;" >
-                                                <p style="font-size: 18px;">Gjinia :
-                                                <label style="margin-left: 80px;"><input type="radio" name="gender" value="male" required>Male</label>
-                                                <label><input type="radio" name="gender" value="female">Female</label>
-                                            </p>
-                                            <p style="margin-top: 20px;">Per cilat produkte jeni me shume te iterrsuar:</p>
+                                            <div style=" margin-left: 38px;" class="gender-select">
+                                                <div style="width: 400px; height: auto;">
+                                                    <p style="font-size: 18px;">Gjinia :
+                                                        <label style="margin: -20px;"><input type="radio" name="gender" value="male" required>Male</label>
+                                                        <label><input type="radio" name="gender" value="female">Female</label>
+                                                    </p>
+                                                    
+                                                </div>
+                                            
+                                            <p style="margin-top: 20px;" style="color: #868686;">Per cilat produkte jeni me shume te iterrsuar:</p>
                                             <br>
-                                            <input type="checkbox" id="Kompjuter"><label style="padding: 10px; color: #868686;">Kompjutere</label>
-                                            <input type="checkbox" id="Telefone"><label style="padding: 10px; color: #868686;">Telefone</label>
-                                            <input type="checkbox" id="Lojera"><label style="padding: 10px; color: #868686;">Lojera</label>
-                                           
+                                            <input type="checkbox" id="Kompjuter" name="pajisja[]" value="1"><label style="padding: 10px; color: #868686;">Kompjutere</label>
+                                            <input type="checkbox" id="Telefone" name="pajisja[]" value="2"><label style="padding: 10px; color: #868686;">Telefone</label>
+                                            <input type="checkbox" id="Lojera"  name="pajisja[]" value="3"><label style="padding: 10px; color: #868686;">Lojera</label>
                                             </div >
                                             <input type="submit" value="REGJISTROHUNI" class="Login-btn" style="margin-left: 290px; margin-bottom: 30px; margin-top: 30px;">
                                         </form>
@@ -186,3 +189,12 @@
         </div>
     </body>
 </html>
+
+emri=dsa
+mbiemri=asd
+email=agency@mail.com
+username=ardianbsyla
+password1=asdasd
+password2=asdasd
+datelindja=2021-01-13
+gender=female

@@ -34,3 +34,23 @@ label {
   color: #ff9900;
   cursor: pointer;
 }
+
+.gender-select label {
+  /* padding: 30px; */
+  display: contents;
+}
+/* .gender-select input {
+  padding: 20px;
+} */
+
+/* .gender-select p {
+  margin: 40pxs;
+} */
+.gender-select p {
+  color: #868686;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.gender-select input {
+  margin-left: 20px;
+}

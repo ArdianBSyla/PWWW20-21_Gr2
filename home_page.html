@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/home-page-style.css" type="text/css">
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>AlgoTech</title>
     </head>
     <script src="script/home-page.js"></script>
@@ -12,14 +12,37 @@
     <script>
             if (typeof(Storage) !== "undefined") {
                 localStorage.setItem("localEmri", "Ardi");
-                console.log("a")
                 sessionStorage.setItem("sessionEmri", "Ardi");
-                console.log("b")
             } else {
                 document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
             }
+            $(document).ready(function(){
+                let hiddenn = false;
+                $("#divi").hide()
+                
+                $(window).scroll(function(){
+                    if(!hiddenn){
+                        if($(this).scrollTop()>=100){
+                            $("#divi").show()
+                        } else if($(this).scrollTop()<=100){
+                            $("#divi").hide()
+                        }
+                    }
+                });
+                
+                $("#fshehi").click(function(){
+                    hiddenn = true;
+                    $("#divi").fadeOut();
+                })
+            });
+            
     </script>
     <body id="my-img" onload="changeimage(5)">
+        <div id="divi" style="position: fixed; right: 20px;">
+            <a href="login.html" target="_blank" class="footerSubmitButton stylesBtn">LOG IN</a> 
+            <a href="signup.html" target="_blank" class="footerSubmitButton stylesBtn">SIGN UP</a>
+            <input id="fshehi" type="button" value="Fshehi" class="footerSubmitButton">
+        </div>
        <div class="container"> 
             <header id="headeri">
                 <div>
@@ -30,6 +53,7 @@
                         <a href="login.html" target="_blank" class="footerSubmitButton stylesBtn">LOG IN</a>  |  
                         <a href="signup.html" target="_blank" class="footerSubmitButton stylesBtn">SIGN UP</a>
                     </p>
+                    
                 </div>
                 <div class="icons">
                     <a
@@ -95,7 +119,7 @@
                                 <p style="margin-left: 30px;">Ju jeni në &nbsp; >> &nbsp; <a id="a-here" href="home_page.html"> HOMEPAGE</a></p>
                             </div>
                             <div>
-                                <h1 class="welcome-title"> MIRË SE VINI NË ALOTECH</h1>
+                                <h1 class="welcome-title"> MIRË SE VINI NË ALGOTECH</h1>
                                 <p class="description"> <span><b>AlgoTech</b></span> është dyqani më i madh online në Kosovë, Shqipëri dhe rajon për produkte teknologjike, me mbi <span style="font-weight: bold;"> 60.000 </span> produkte nga brendet më të njohura botërore.</p>
                                 <hr class="hr-after-title">
                                 <div class="outer-div">

@@ -1,155 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html manifest="demo.appcache">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/reset.css" type="text/css">
         <link rel="stylesheet" href="css/home-page-style.css" type="text/css">
         <link rel="stylesheet" href="css/products-page-style.css" type="text/css">
-        
-        <title>PRODUCT</title>
+        <title>PRODUCTS</title>
     </head>
     <script src="script/home-page.js"></script>
-    <body>
-        <div class="container">
-            <header style="display: flex; align-items: center;">
-                <div style="margin-left: 20px;">
-                    <p style="font-size: 15px;">
-                        <a href="#" class="footerSubmitButton stylesBtn"> HOMEPAGE</a>  |  
-                        <a href="#" class="footerSubmitButton stylesBtn">STYLE DEMO</a>  |  
-                        <a href="#" class="footerSubmitButton stylesBtn">FULL WIDTH</a>  |  
-                        <!-- <a href="#" class="footerSubmitButton stylesBtn">PORTFOLIO</a>  |   -->
-                        <a href="#" class="footerSubmitButton stylesBtn">GALLERY</a>  |  
-                        <a href="#" class="footerSubmitButton stylesBtn">DROPDOWN</a>
-                    </p>
-                </div>
-                <div class="icons">
-                    <a
-                     href="https://www.linkedin.com/"
-                     target="”_blank”"
-                     class="icon icon--linkedin"
-                   ></a>
-                   <a
-                     href="https://www.twitter.com/"
-                     target="”_blank”"
-                     class="icon icon--twitter"
-                   ></a>
-                   <a
-                     href="https://www.pinterest.com/"
-                     target="”_blank”"
-                     class="icon icon--pinterest"
-                   ></a>
-                   <a
-                     href="mailto:ardianbsyla@gmail.com?subject = Feedback&body = Message"
-                     target="”_blank”"
-                     class="icon icon--google-plus"
-                   ></a>
-                   <a href="https://rss.app/" target="”_blank”" class="icon icon--rss"></a>   
+    <script src="script/validations.js"></script>
+    <body id="my-img" onload="changeimage(5)">
+        <div class="container"> 
+             <header id="headeri">
+                 <div>
+                     <p>
+                         <a href="home_page.html" class="footerSubmitButton stylesBtn"> HOMEPAGE</a>  |  
+                         <a href="products.html" class="footerSubmitButton stylesBtn">PRODUCTS</a>  |  
+                         <a href="aboutUs.html" class="footerSubmitButton stylesBtn">ABOUT US</a>  |  
+                         <a href="login.html" target="_blank" class="footerSubmitButton stylesBtn">LOG IN</a>  |  
+                         <a href="signup.html" target="_blank" class="footerSubmitButton stylesBtn">SIGN UP</a>
+                     </p>
                  </div>
-
-                
-            </header>
-            <section class="start-section" id="">
-                <div style="background-color: #252525;">
-                    <div style="display: flex; height: 110px; align-items: center;">
-                        <h2 style="color: white; font-size: 30px; margin-left: 20px; margin-right: 20px;">AlgoTech</h2>
-                        <p style="color: white; margin-top: 10px;">Pajisuni me kompjuterin më të mirë</p>
+                 <div class="icons">
+                     <a
+                      href="https://www.linkedin.com/"
+                      target="”_blank”"
+                      class="icon icon--linkedin"
+                    ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      target="”_blank”"
+                      class="icon icon--twitter"
+                    ></a>
+                    <a
+                      href="https://www.pinterest.com/"
+                      target="”_blank”"
+                      class="icon icon--pinterest"
+                    ></a>
+                    <a
+                      href="mailto:ardianbsyla@gmail.com?subject = Feedback&body = Message"
+                      target="”_blank”"
+                      class="icon icon--google-plus"
+                    ></a>
+                    <a href="https://rss.app/" target="”_blank”" class="icon icon--rss"></a>   
+                  </div>
+             </header>
+             <section class="start-section">
+                <div id="dark-back">
+                    <div class="after-head">
+                        <h2>AlgoTech</h2>
+                        <p>Pajisuni me kompjuterin m&#235; t&#235; mir&#235;</p>
                         <input type="text" style="margin-left: 355px; border-radius: 0px;" class="text-button" name="search" placeholder="Kërkoni këtu...">
-                        <input type="button" value="Search" class="search-btn" name="submit-search-btn" style="margin-right: 20;">
+                        <input type="button" value="Search" class="search-btn" name="submit-search-btn">
                     </div>
-                    <div style="width: 960px; height: 340px; background-color: #3f3f3f; margin-left: 20px;">
-                        <div class="mySlide fade">
+                    <div class="img-div">
+                        <div class="mySlide fade" id="slide1" style="display: block;">
                             <img src="images/desktop-setup-art.jpg" alt="desktop setup" width="960" height="340">
                         </div>
-                        <div class="mySlide fade">
-                            <img src="images/Ardi.jpg" alt="desktop setup" width="960" height="340">
+                        <div class="mySlide fade" id="slide2">
+                            <img src="images/desktop-setup2.jpg" alt="desktop setup" width="960" height="340">
                         </div>
-                        
-
+                        <div class="mySlide fade" id="slide3">
+                            <img src="images/desktop.jpg" alt="desktop setup" width="960" height="340">
+                        </div>
+                        <div class="mySlide fade" id="slide4">
+                            <img src="images/desktop-monitors-4.jpg" alt="desktop setup" width="960" height="340">
+                        </div>
+                        <div class="mySlide fade" id="slide5">
+                            <img src="images/desktop-5.jpg" alt="desktop setup" width="960" height="340">
+                        </div>
                     </div>
                 </div>
-                <div style="background-color: #fe9900; height: 15px; display: flex;">
-                    <div class="rectangle" onclick="currentSlide(1)" ></div>
-                    <div class="rectangle" onclick="currentSlide(2)"></div>
-                    <!-- <div style="background-color: #fe9900; width: 200px; height: 15px;"></div>
-                    <div style="background-color: #fe9900; width: 200px; height: 15px;"></div>
-                    <div style="background-color: #fe9900; width: 200px; height: 15px;"></div> -->
+                <div class="scroll-img">
+                    <div class="rectangle" id="rec1" onclick="currentSlide(1)" style="background-color: #ffffff;"></div>
+                    <div class="rectangle" id="rec2" onclick="currentSlide(2)"></div>
+                    <div class="rectangle" id="rec3" onclick="currentSlide(3)"></div>
+                    <div class="rectangle" id="rec4" onclick="currentSlide(4)"></div>
+                    <div class="rectangle" id="rec5" onclick="currentSlide(5)"></div>
                 </div>
-                <section style="background-color: #e1e1e1; ">
-                    <section style="margin-left: 20px; margin-right: 20px; background-color: #ffffff;">
-
-                    
-                    <section style="margin-left: 30px; margin-right: 30px; ">
-                
-                <div style="height: 55px; margin-left: -30px; margin-right: -30px; background-color: #f0f0f0; align-items: center; display: flex;">
-                    <p style="margin-left: 30px;">You are here &nbsp; >> &nbsp; PRODUCTS PAGE</p>
-                </div>
-                <div>
-                    
-                    <div class="products-class">
-                        <table>
-                            <tr>
-                                <td style="width: 200px; padding-right: 20px;">
-                                    <img src="images/Computer0.jpg" width="270"  alt="kompjuter" style="margin-bottom: 10px; ">
-                                    <p style="margin-bottom: 10px;">Laptop Lenovo IdeaPad 5 14IIL05, 14'', Intel Core i7, 16GB RAM, 1TB SSD, Intel Iris Plus Graphics, i hirtë</p>
-                                    <a href="#"> Shikoni më shumë</a>
-                                </td>
-                                <td style="width: 200px; padding-right: 20px;">
-                                    <img src="images/0.jpg" width="270"  alt="kompjuter" style="margin-bottom: 10px;">
-                                    <p style="margin-bottom: 10px;">Laptop Apple MacBook Pro 16 Touch Bar, 16'', Intel Core i7, 16GB RAM, 512GB SSD, AMD Radeon Pro 5500M, i hirtë</p>
-                                    <a href="#"> Shikoni më shumë</a>
-                                </td>
-                                <td style="width: 200px; padding-right: 20px;">
-                                    <img src="images/Asus.jpg" width="250"  alt="kompjuter" style="margin-bottom: 10px;">
-                                    <p style="margin-bottom: 10px;">Laptop ASUS Zenbook UX425EA, 14inch, Core-i5, 512GB SSD, 8GB DRX4 RAM, i argjendtë</p>
-                                    <a href="#"> Shikoni më shumë</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 200px; padding-right: 20px;">
-                                    <img src="images/Mnitori.jpg" width="270"  alt="kompjuter" style="margin-bottom: 10px;">
-                                    <p style="margin-bottom: 10px;">Monitor Samsung LC49HG90DMUXEN, 49", 144Hz, hirtë, zi</p>
-                                    <a href="#"> Shikoni më shumë</a>
-                                </td>
-                                <td style="width: 200px; padding-right: 20px;">
-                                    <img id="foto-product-three" src="images/Karrige0.jpg" width="80px"  alt="kompjuter" style="margin-bottom: 10px; margin-left: 90px;">
-                                    <p style="margin-bottom: 10px;">Karrige Nitro Concepts E250, gaming, e zezë/kuqe</p>
-                                    <a href="#"> Shikoni më shumë</a>
-                                </td>
-                                <td style="width: 200px; padding-right: 20px;">
-                                    <img src="images/Timon.jpg" width="110"  alt="kompjuter" style="margin-bottom: 10px; margin-left: 80px;">
-                                    <p style="margin-bottom: 10px;">Mbajtëse për timon Thrustmaster TS-PC / T-GT / TS-XW dhe T150 Pro Racing Wheels</p>
-                                    <a href="#"> Shikoni më shumë</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="width: 200px; padding-right: 20px;">
-                                    <img id="tastiera" src="images/Tastatur.jpg" width="270"  alt="tastatur" style="margin-bottom: 10px;">
-                                    <p style="margin-bottom: 10px;">Tastierë CONNECT IT CI-1129, e zezë</p>
-                                    <a href="#"> Shikoni më shumë</a>
-                                </td>
-                                <td  style="width: 200px; padding-right: 20px;">
-                                    <img id="ora-dy-e-nates" src="images/Ore.jpg" width="200"  alt="ore" style="margin-bottom: 10px;margin-left: 30px;">
-                                    <p style="margin-bottom: 10px;">Orë smart GARMIN Vívoactive 4, e argjendtë/hirtë</p>
-                                    <a href="#"> Shikoni më shumë</a>
-                                </td>
-                                <td  style="width: 200px; padding-right: 20px;">
-                                    <img id="shtepiza" src="images/shtepize.jpg" width="170"  alt="shtepize" style="margin-bottom: 10px;">
-                                    <p style="margin-bottom: 10px;">Kompjuter CZC PC Knight GC114, Intel Core i5, 16GB DDR4, 1TB SSM, ASUS ROG-STRIX-GTX1660S-O6G</p>
-                                    <a href="#"> Shikoni më shumë</a>
-                                </td>
-                            </tr>
-                        </table>
-                        <br>
-                    </div>
-                    
-                </div>
-            </section>
-            </section>
-            </section>
+                <section class="st-section">
+                    <section class="nd-section">
+                        <section class="rd-section">
+                            <div class="you-here">
+                                <p style="margin-left: 30px;">Ju jeni në &nbsp; >> &nbsp; <a id="a-here" href="products.html"> PRODUCTS</a></p>
+                            </div>
+                            <div>
+                            <div class="products-class">
+                                <table>
+                                    <tr>
+                                        <td style="width: 200px; padding-right: 20px;">
+                                            <img src="images/Computer0.jpg" width="270"  alt="kompjuter" style="margin-bottom: 10px; ">
+                                            <p style="margin-bottom: 10px; color: #888888;">Laptop Lenovo IdeaPad 5 14IIL05, 14'', Intel Core i7, 16GB RAM, 1TB SSD, Intel Iris Plus Graphics, i hirtë</p>
+                                            <a href="product.html"> Shikoni më shumë</a>
+                                        </td>
+                                        <td style="width: 200px; padding-right: 20px;">
+                                            <img src="images/0.jpg" width="270"  alt="kompjuter" style="margin-bottom: 10px;">
+                                            <p style="margin-bottom: 10px; color: #888888;">Laptop Apple MacBook Pro 16 Touch Bar, 16'', Intel Core i7, 16GB RAM, 512GB SSD, AMD Radeon Pro 5500M, i hirtë</p>
+                                            <a href="product.html"> Shikoni më shumë</a>
+                                        </td>
+                                        <td style="width: 200px; padding-right: 20px;">
+                                            <img src="images/Asus.jpg" width="250"  alt="kompjuter" style="margin-bottom: 10px;">
+                                            <p style="margin-bottom: 10px; color: #888888;">Laptop ASUS Zenbook UX425EA, 14inch, Core-i5, 512GB SSD, 8GB DRX4 RAM, i argjendtë</p>
+                                            <a href="product.html"> Shikoni më shumë</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 200px; padding-right: 20px;">
+                                            <img src="images/Mnitori.jpg" width="270"  alt="kompjuter" style="margin-bottom: 10px;">
+                                            <p style="margin-bottom: 10px; color: #888888;">Monitor Samsung LC49HG90DMUXEN, 49", 144Hz, hirtë, zi</p>
+                                            <a href="product.html"> Shikoni më shumë</a>
+                                        </td>
+                                        <td style="width: 200px; padding-right: 20px;">
+                                            <img id="foto-product-three" src="images/Karrige0.jpg" width="80px"  alt="kompjuter" style="margin-bottom: 10px; margin-left: 90px;">
+                                            <p style="margin-bottom: 10px; color: #888888;">Karrige Nitro Concepts E250, gaming, e zezë/kuqe</p>
+                                            <a href="product.html"> Shikoni më shumë</a>
+                                        </td>
+                                        <td style="width: 200px; padding-right: 20px;">
+                                            <img src="images/Timon.jpg" width="110"  alt="kompjuter" style="margin-bottom: 10px; margin-left: 80px;">
+                                            <p style="margin-bottom: 10px; color: #888888;">Mbajtëse për timon Thrustmaster TS-PC / T-GT / TS-XW dhe T150 Pro Racing Wheels</p>
+                                            <a href="product.html"> Shikoni më shumë</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 200px; padding-right: 20px;">
+                                            <img id="tastiera" src="images/Tastatur.jpg" width="270"  alt="tastatur" style="margin-bottom: 10px;">
+                                            <p style="margin-bottom: 10px; color: #888888;">Tastierë CONNECT IT CI-1129, e zezë</p>
+                                            <a href="product.html"> Shikoni më shumë</a>
+                                        </td>
+                                        <td  style="width: 200px; padding-right: 20px;">
+                                            <img id="ora-dy-e-nates" src="images/Ore.jpg" width="200"  alt="ore" style="margin-bottom: 10px;margin-left: 30px;">
+                                            <p style="margin-bottom: 10px; color: #888888;">Orë smart GARMIN Vívoactive 4, e argjendtë/hirtë</p>
+                                            <a href="product.html"> Shikoni më shumë</a>
+                                        </td>
+                                        <td  style="width: 200px; padding-right: 20px;">
+                                            <img id="shtepiza" src="images/shtepize.jpg" width="170"  alt="shtepize" style="margin-bottom: 10px;">
+                                            <p style="margin-bottom: 10px; color: #888888;">Kompjuter CZC PC Knight GC114, Intel Core i5, 16GB DDR4, 1TB SSM, ASUS ROG-STRIX-GTX1660S-O6G</p>
+                                            <a href="product.html"> Shikoni më shumë</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br>
+                            </div>
+                            
+                        </div>
+                        </section>
+                    </section>
+                </section>
             </section>
             <footer class="footerDiv">
-                <div style="display: flex; height: 216px; margin: 0px 20px 0px 20px">
-                    <div style="width: 225px; margin-right: 20px;   ">
+                <div class="st-footer-div">
+                    <address>
                         <p class="headParagraph">KONTAKTI</p>
                         <p>Algo Tech</p>
                         <p>Rr.Zahir Pajaziti, 10000</p>
@@ -158,35 +158,37 @@
                         <p>Tel: +383 (0) 44 123 123</p>
                         <p>Fax: +383 (0) 44 123 123</p>
                         <p>Email: ardianbsyla@gmail.com</p>
-                    </div>
-                    <div style="width: 225px; margin-right: 20px;">   
+                    </address>
+                    <div>   
                         <p class="headParagraph">LINQE TE SHPEJTA</p>
                         <p><a href="http://www.facebook.com">Facebook</a></p><hr>
                         <p><a href="http://www.twitter.com">Twitter</a></p><hr>
                         <p><a href="http://www.linkedin.com">Linkedin</a></p><hr>
                         <p><a href="http://www.youtube.com">Youtube</a></p><hr>
                     </div>
-                    <div style="width: 225px; margin-right: 20px;">
+                    <div>
                         <p class="headParagraph">NGA FAQJA</p>
-                        <p style="font-size: 15px;"><b>Zbritje në Algo Tech</b></p>
+                        <p><b>Zbritje në Algo Tech</b></p>
                         <p>Postuar nga Gashi.</p>
-                        <p style="margin-top: 8px; margin-bottom: 8px;">Këtë javë kemi zbritje të madhe në Algo Tech. Zbritja përfshinë shumë produkte të shumë kërkuara.</p>
-                        <a style="float: right; font-size: 12px;" href="#">Lexoni më shumë >></a>
+                        <p class="notif-p">Këtë javë kemi zbritje të madhe në Algo Tech. Zbritja përfshinë shumë produkte të shumë kërkuara.</p>
+                        <a class="notif-a" href="./aboutUs.html">Lexoni më shumë >></a>
                     </div>
-                    <div style="width: 225px; margin-right: 20px;">
+                    <div>
                         <p class="headParagraph">MERRNI NJOFTIMET TONA</p>
-                        <form action="#" method="post">
-                            <input type="text" placeholder=" Emri:" class="text-button">
-                            <input type="email" name="" id="" placeholder=" Email:" class="text-button" style="margin-top: 15px;">
-                            <input type="submit" value="SUBMIT" class="footerSubmitButton">
+                        <form name="contactForm" method="post" onsubmit="return validateContactForm()">
+                            <input type="text" name="emri" placeholder=" Emri:" class="text-button">
+                            <p id="nameContactValidation"></p>
+                            <input   name="email"  placeholder=" Email:" class="text-button" style="margin-top: 15px;">
+                            <p id="emailContactValidation"></p>
+                            <input type="submit" value="DËRGO" class="footerSubmitButton">
+                            <a href="#headeri" class="footerSubmitButton kthehu-btn" >KTHEHU</a>
                         </form>
                     </div>
                 </div>
-                <div style="display: flex; align-items: center; height: 60px; background-color: #000000;">
-                    <p style="margin-left: 20px;">Copyright &copy; 2020 - All Rights Reserved - Algo Tech</p>
+                <div class="last-footer-div">
+                    <p>Copyright &copy; 2020 - All Rights Reserved - Algo Tech</p>
                 </div>
             </footer>
-    
         </div>
     </body>
 </html>
